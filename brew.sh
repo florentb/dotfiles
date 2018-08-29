@@ -106,6 +106,7 @@ brew install htop
 brew install node
 brew install yarn
 brew install mackup
+brew install bat
 
 # Install native apps
 brew cask install dropbox
