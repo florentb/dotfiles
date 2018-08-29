@@ -37,6 +37,28 @@ if type _git &> /dev/null && [ -f /usr/local/etc/bash_completion.d/git-completio
 	complete -o default -o nospace -F _git g;
 fi;
 
+# Welcome message
+if which brew &> /dev/null && [ -f "$(brew --prefix archey)/bin/archey" ]; then
+	source archey -c -o;
+fi;
+
+# Direnv (http://direnv.net/)
+if which brew &> /dev/null && [ -f "$(brew --prefix direnv)/bin/direnv" ]; then
+	eval "$(direnv hook bash)";
+fi;
+
+# NVM
+if which brew &> /dev/null && [ -f "$(brew --prefix nvm)/nvm.sh" ]; then
+	[ -d "$HOME/.nvm" ] || mkdir "$HOME/.nvm";
+	export NVM_DIR="$HOME/.nvm";
+	source "$(brew --prefix nvm)/nvm.sh";
+fi;
+
+# DVM
+if which brew &> /dev/null && [ -f "$(brew --prefix dvm)/dvm.sh" ]; then
+	[[ -s "$(brew --prefix dvm)/dvm.sh" ]] && source "$(brew --prefix dvm)/dvm.sh";
+fi;
+
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
 
