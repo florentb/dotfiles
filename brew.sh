@@ -41,7 +41,7 @@ brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
-brew install homebrew/php/php56 --with-gmp
+brew install php
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -92,6 +92,35 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install zopfli
+brew install archey
+brew install direnv
+brew install nvm
+brew install dvm
+brew install composer
+brew install awscli
+brew install ffmpeg --with-fdk-aac
+brew install youtube-dl
+brew install vips
+brew install siege
+brew install htop
+brew install node
+brew install yarn
+brew install mackup
+
+# Install native apps
+brew cask install dropbox
+brew cask install google-chrome
+brew cask install google-chrome-canary
+brew cask install firefox
+brew cask install imagealpha
+brew cask install imageoptim
+brew cask install iterm2
+brew cask install atom
+brew cask install sublime-text
+brew cask install the-unarchiver
+brew cask install virtualbox
+brew cask install vlc
+brew cask install kap
 
 # Remove outdated versions from the cellar.
 brew cleanup
