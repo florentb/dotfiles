@@ -157,3 +157,6 @@ alias ping='prettyping --nolegend'
 
 # Preview with fzf
 alias preview="fzf --preview 'bat --color \"always\" {}'"
+
+# htop > top
+alias top="sudo htop"
