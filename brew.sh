@@ -123,6 +123,7 @@ brew cask install the-unarchiver
 brew cask install virtualbox
 brew cask install vlc
 brew cask install kap
+brew install fzf
 
 # Remove outdated versions from the cellar.
 brew cleanup

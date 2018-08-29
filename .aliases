@@ -154,3 +154,6 @@ alias cat='bat'
 
 # prettyping > ping
 alias ping='prettyping --nolegend'
+
+# Preview with fzf
+alias preview="fzf --preview 'bat --color \"always\" {}'"

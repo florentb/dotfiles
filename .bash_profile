@@ -59,6 +59,11 @@ if which brew &> /dev/null && [ -f "$(brew --prefix dvm)/dvm.sh" ]; then
 	[[ -s "$(brew --prefix dvm)/dvm.sh" ]] && source "$(brew --prefix dvm)/dvm.sh";
 fi;
 
+# Fzf
+if which brew &> /dev/null && [ -f "$(brew --prefix fzf)/bin/fzf" ]; then
+	source ~/.fzf.bash
+fi;
+
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
 
