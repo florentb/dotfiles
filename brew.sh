@@ -107,6 +107,7 @@ brew install node
 brew install yarn
 brew install mackup
 brew install bat
+brew install prettyping
 
 # Install native apps
 brew cask install dropbox
