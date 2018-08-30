@@ -160,3 +160,6 @@ alias preview="fzf --preview 'bat --color \"always\" {}'"
 
 # htop > top
 alias top="sudo htop"
+
+# ncdu > du
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"

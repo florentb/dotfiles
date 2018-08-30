@@ -111,6 +111,7 @@ brew install prettyping
 brew install jq
 brew install tree
 brew install fzf
+brew install ncdu
 
 # Install native apps
 brew cask install xquartz
