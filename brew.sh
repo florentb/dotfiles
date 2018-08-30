@@ -100,7 +100,7 @@ brew install composer
 brew install awscli
 brew install ffmpeg --with-fdk-aac
 brew install youtube-dl
-brew install vips
+brew install vips --with-jpeg-turbo --with-webp
 brew install siege
 brew install htop
 brew install node
@@ -108,8 +108,12 @@ brew install yarn
 brew install mackup
 brew install bat
 brew install prettyping
+brew install jq
+brew install tree
+brew install fzf
 
 # Install native apps
+brew cask install xquartz
 brew cask install dropbox
 brew cask install google-chrome
 brew cask install google-chrome-canary
@@ -123,7 +127,13 @@ brew cask install the-unarchiver
 brew cask install virtualbox
 brew cask install vlc
 brew cask install kap
-brew install fzf
+brew cask install qlmarkdown
+brew cask install qlprettypatch
+brew cask install qlstephen
+brew cask install quicklook-csv
+brew cask install quicklook-json
+brew cask install webpquicklook
+brew cask install sequel-pro
 
 # Remove outdated versions from the cellar.
 brew cleanup
