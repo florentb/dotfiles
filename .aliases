@@ -163,3 +163,6 @@ alias top="sudo htop"
 
 # ncdu > du
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
+
+# Download the MP3 of a YouTube video
+alias youtube2mp3="youtube-dl -q -i -x --audio-format mp3 --audio-quality 0"
