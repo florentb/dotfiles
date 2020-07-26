@@ -110,6 +110,7 @@ brew install jq
 brew install tree
 brew install fzf
 brew install ncdu
+brew install massren
 
 # Install native apps
 brew cask install xquartz
