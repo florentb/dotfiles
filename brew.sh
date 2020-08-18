@@ -21,7 +21,7 @@ brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 # Install a modern version of Bash.
 brew install bash
 brew install bash-completion2
@@ -32,14 +32,14 @@ if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
   chsh -s "${BREW_PREFIX}/bin/bash";
 fi;
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
+# Install `wget`.
+brew install wget
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim
 brew install grep
 brew install openssh
 brew install screen
@@ -78,7 +78,7 @@ brew install ack
 brew install git
 brew install git-lfs
 brew install gs
-brew install imagemagick --with-webp
+brew install imagemagick
 brew install lua
 brew install lynx
 brew install p7zip
@@ -92,16 +92,16 @@ brew install vbindiff
 brew install zopfli
 brew install archey
 brew install direnv
-brew install nvm
-brew install dvm
+#brew install dvm
 brew install composer
 brew install awscli
-brew install ffmpeg --with-fdk-aac
+brew install ffmpeg
 brew install youtube-dl
-brew install vips --with-jpeg-turbo --with-webp
+#brew install vips --with-jpeg-turbo --with-webp
 brew install siege
 brew install htop
 brew install node
+brew install nvm
 brew install yarn
 brew install mackup
 brew install bat
@@ -114,6 +114,7 @@ brew install massren
 
 # Install native apps
 brew cask install xquartz
+brew cask install docker
 brew cask install dropbox
 brew cask install google-chrome
 brew cask install google-chrome-canary
@@ -135,6 +136,21 @@ brew cask install quicklook-json
 brew cask install webpquicklook
 brew cask install sequel-pro
 brew cask install spectacle
+brew cask install iconjar
+brew cask install transmit
+brew cask install deezer
+brew cask install macdown
+brew cask install notion
+brew cask install zoomus
+brew cask install skype
+brew cask install nordvpn
+brew cask install loom
+brew cask install steam
+brew cask install postman
+brew cask install cleanmymac
+brew cask install plex
+brew cask install caffeine
+brew cask install authy
 
 # Remove outdated versions from the cellar.
 brew cleanup
