@@ -123,6 +123,7 @@ brew cask install imagealpha
 brew cask install imageoptim
 brew cask install iterm2
 brew cask install atom
+brew cask install sketch
 brew cask install sublime-text
 brew cask install the-unarchiver
 brew cask install virtualbox
