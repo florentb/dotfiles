@@ -142,7 +142,7 @@ brew cask install transmit
 brew cask install deezer
 brew cask install macdown
 brew cask install notion
-brew cask install zoomus
+brew cask install zoom
 brew cask install skype
 brew cask install nordvpn
 brew cask install loom
