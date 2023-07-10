@@ -1,4 +1,17 @@
-# holman does dotfiles
+# Florent's dotfiles
+
+It's been a big productivity improvement to have my own little scripts which
+make things easier in my system. Thanks to Zach Holman for releasing his
+forkable dotfiles!
+
+I sync this repo across all my computers which all run:
+
+- MacOS
+- The ZSH shell
+
+---
+
+## Original Zach Holman Readme
 
 Your dotfiles are how you personalize your system. These are mine.
 
