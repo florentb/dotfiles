@@ -37,6 +37,3 @@
   command = /opt/homebrew/bin/spaceman-diff
 [init]
 	defaultBranch = main
-[gpg]
-	program = /opt/homebrew/bin/gpg
-	format = openpgp
