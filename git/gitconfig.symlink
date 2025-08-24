@@ -17,6 +17,8 @@
 [core]
         excludesfile = ~/.gitignore
         editor = vim
+[commit]
+	gpgsign = true
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -35,3 +37,6 @@
   command = /opt/homebrew/bin/spaceman-diff
 [init]
 	defaultBranch = main
+[gpg]
+	program = /opt/homebrew/bin/gpg
+	format = openpgp
