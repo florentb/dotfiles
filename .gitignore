@@ -1,1 +1,6 @@
 git/gitconfig.local.symlink
+
+# Claude Code files
+CLAUDE.md
+.claude/
+claude-*.md
